@@ -1,0 +1,3 @@
+Ce programme python me permet de lire un fichier texte. Ce que je fais actuellement.
+Je peux également lire les commentaires dans un fichier python.
+Je vais désormais lire les commentaire de mon propre fichier python.
