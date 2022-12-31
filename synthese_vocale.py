@@ -55,4 +55,4 @@ def readCode():
     print('Done')
 
 readText()
-#readCode()
+readCode()
