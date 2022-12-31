@@ -19,7 +19,11 @@ def tts(text='audio.txt', fLang='fr', Fslow=False, filename='', path=''):
             print('Path doesn\'t exist, creating it')
             os.makedirs(path)
     num_files = len([f for f in os.listdir(path) if f.startswith(filename)])
-    tts.save(path + filename + str(num_files) + '.mp3')
+    if num_files == 0:
+        tts.save(path + filename + '.mp3')
+    else:
+        tts.save(path + filename + str(num_files) + '.mp3')
+    #there could be a problem if the user removed or renamed a file but this problem will not be solved here
 
 #getText, function to read text from file
 def getText(filename):
@@ -51,4 +55,4 @@ def readCode():
     print('Done')
 
 readText()
-readCode()
+#readCode()
